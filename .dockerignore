@@ -1,0 +1,15 @@
+﻿__pycache__
+*.pyc
+*.pyo
+.venv
+venv_reco
+.git
+.gitignore
+*.log
+.pytest_cache
+.ipynb_checkpoints
+README.md
+logs/
+exports/
+.env
+.env.*

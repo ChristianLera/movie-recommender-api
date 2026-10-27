@@ -1,0 +1,24 @@
+﻿# Dependencias del servicio de recomendación (FastAPI + Docker)
+# Versiones fijadas tras validar el entorno en venv_reco.
+
+# --- API ---
+fastapi==0.162.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+
+# --- Ciencia de datos ---
+pandas==2.3.3
+numpy==1.26.4
+
+# --- Machine Learning ---
+scikit-learn==1.9.1
+scipy==1.17.1
+joblib==1.6.0
+
+# --- Parquet (lectura de movies/ratings) ---
+# OJO: pyarrow 26+ exige numpy>=2 y rompe scikit-learn en este proyecto.
+# Mantener pyarrow<26 mientras numpy<2.
+pyarrow>=25.0.1,<26
+
+# --- Utilidades ---
+python-dotenv==1.0.1
